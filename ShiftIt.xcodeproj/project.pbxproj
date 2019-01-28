@@ -15,6 +15,8 @@
 		3459F04121FEBE3A0090D03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3459F04021FEBE3A0090D03C /* main.m */; };
 		3459F04B21FEBE3A0090D03C /* ShiftItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3459F04A21FEBE3A0090D03C /* ShiftItTests.m */; };
 		3459F05621FEBE3A0090D03C /* ShiftItUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3459F05521FEBE3A0090D03C /* ShiftItUITests.m */; };
+		3459F06521FFCBA70090D03C /* CalenderContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3459F06421FFCBA70090D03C /* CalenderContainerViewController.swift */; };
+		CD07C79792904596C9311635 /* Pods_ShiftIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD86DA6212CED944AE55119 /* Pods_ShiftIt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		3459F05121FEBE3A0090D03C /* ShiftItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3459F05521FEBE3A0090D03C /* ShiftItUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftItUITests.m; sourceTree = "<group>"; };
 		3459F05721FEBE3A0090D03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3459F06321FFCBA70090D03C /* ShiftIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShiftIt-Bridging-Header.h"; sourceTree = "<group>"; };
+		3459F06421FFCBA70090D03C /* CalenderContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderContainerViewController.swift; sourceTree = "<group>"; };
+		870748AB506974A57F954A7A /* Pods-ShiftIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiftIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShiftIt/Pods-ShiftIt.release.xcconfig"; sourceTree = "<group>"; };
+		96C2D839AF5AA5360EBCF2E6 /* Pods-ShiftIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiftIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShiftIt/Pods-ShiftIt.debug.xcconfig"; sourceTree = "<group>"; };
+		DDD86DA6212CED944AE55119 /* Pods_ShiftIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShiftIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD07C79792904596C9311635 /* Pods_ShiftIt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				3459F04921FEBE3A0090D03C /* ShiftItTests */,
 				3459F05421FEBE3A0090D03C /* ShiftItUITests */,
 				3459F02F21FEBE390090D03C /* Products */,
+				D5639DCDBB6C6B9ECD998EE1 /* Pods */,
+				E2D4CF47042978004F635701 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,11 +115,13 @@
 				3459F03221FEBE390090D03C /* AppDelegate.m */,
 				3459F03421FEBE390090D03C /* ViewController.h */,
 				3459F03521FEBE390090D03C /* ViewController.m */,
+				3459F06421FFCBA70090D03C /* CalenderContainerViewController.swift */,
 				3459F03721FEBE390090D03C /* Main.storyboard */,
 				3459F03A21FEBE3A0090D03C /* Assets.xcassets */,
 				3459F03C21FEBE3A0090D03C /* LaunchScreen.storyboard */,
 				3459F03F21FEBE3A0090D03C /* Info.plist */,
 				3459F04021FEBE3A0090D03C /* main.m */,
+				3459F06321FFCBA70090D03C /* ShiftIt-Bridging-Header.h */,
 			);
 			path = ShiftIt;
 			sourceTree = "<group>";
@@ -132,6 +144,23 @@
 			path = ShiftItUITests;
 			sourceTree = "<group>";
 		};
+		D5639DCDBB6C6B9ECD998EE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96C2D839AF5AA5360EBCF2E6 /* Pods-ShiftIt.debug.xcconfig */,
+				870748AB506974A57F954A7A /* Pods-ShiftIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2D4CF47042978004F635701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDD86DA6212CED944AE55119 /* Pods_ShiftIt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3459F05A21FEBE3A0090D03C /* Build configuration list for PBXNativeTarget "ShiftIt" */;
 			buildPhases = (
+				1FAAB9789657FFA02359A1CF /* [CP] Check Pods Manifest.lock */,
 				3459F02A21FEBE390090D03C /* Sources */,
 				3459F02B21FEBE390090D03C /* Frameworks */,
 				3459F02C21FEBE390090D03C /* Resources */,
+				EA79525B3189B757BD862240 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +230,7 @@
 				TargetAttributes = {
 					3459F02D21FEBE390090D03C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					3459F04521FEBE3A0090D03C = {
 						CreatedOnToolsVersion = 10.1;
@@ -257,11 +289,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FAAB9789657FFA02359A1CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShiftIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA79525B3189B757BD862240 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ShiftIt/Pods-ShiftIt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShiftIt/Pods-ShiftIt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3459F02A21FEBE390090D03C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3459F06521FFCBA70090D03C /* CalenderContainerViewController.swift in Sources */,
 				3459F03621FEBE390090D03C /* ViewController.m in Sources */,
 				3459F04121FEBE3A0090D03C /* main.m in Sources */,
 				3459F03321FEBE390090D03C /* AppDelegate.m in Sources */,
@@ -433,8 +513,10 @@
 		};
 		3459F05B21FEBE3A0090D03C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C2D839AF5AA5360EBCF2E6 /* Pods-ShiftIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8X486LY33;
 				INFOPLIST_FILE = ShiftIt/Info.plist;
@@ -444,14 +526,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShiftIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShiftIt/ShiftIt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3459F05C21FEBE3A0090D03C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870748AB506974A57F954A7A /* Pods-ShiftIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8X486LY33;
 				INFOPLIST_FILE = ShiftIt/Info.plist;
@@ -461,6 +548,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShiftIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShiftIt/ShiftIt-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -468,6 +557,7 @@
 		3459F05E21FEBE3A0090D03C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8X486LY33;
@@ -487,6 +577,7 @@
 		3459F05F21FEBE3A0090D03C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8X486LY33;
@@ -506,6 +597,7 @@
 		3459F06121FEBE3A0090D03C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8X486LY33;
 				INFOPLIST_FILE = ShiftItUITests/Info.plist;
@@ -524,6 +616,7 @@
 		3459F06221FEBE3A0090D03C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8X486LY33;
 				INFOPLIST_FILE = ShiftItUITests/Info.plist;

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import FSCalendar;
 
 @interface ViewController : UIViewController
 
